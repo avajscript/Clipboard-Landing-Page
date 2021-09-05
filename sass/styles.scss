@@ -50,6 +50,10 @@ p {
 .cap-width {
   max-width: 900px;
 }
+.lg-cap-width {
+  max-width: 1252px;
+  margin: 0 auto;
+}
 .left {
   text-align: left;
 }
@@ -238,6 +242,7 @@ footer {
   // End of reusable
   .section-one {
     position: relative;
+    margin: 10rem auto 0;
     img {
       max-width: 800px;
       position: relative;
