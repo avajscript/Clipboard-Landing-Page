@@ -7,6 +7,9 @@ $light-grey: hsl(201, 11%, 66%);
   box-sizing: border-box;
   font-family: "Bai Jamjuree";
 }
+ul {
+  list-style: none;
+}
 .bg-image {
   position: absolute;
   width: 100%;
@@ -143,12 +146,40 @@ button {
 }
 
 .section-five {
+  margin-bottom: 10rem;
   p {
     margin-bottom: 3rem;
   }
 }
 
+.desktop {
+  display: none;
+}
+footer {
+  padding: 30px;
+  background-color: #eee;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(7);
+  }
+  img {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  a {
+    color: $dark-grey;
+    margin-top: 1.2rem;
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1052px) {
+  .desktop {
+    display: block;
+  }
   .bg-image {
     background: url("../images/bg-header-desktop.png");
     background-size: 100% 100%;
@@ -186,7 +217,14 @@ button {
   .flex {
     display: flex;
   }
-
+  .flex-center {
+    display: flex;
+    align-items: center;
+  }
+  .flex-left {
+    display: flex;
+    justify-content: flex-start;
+  }
   // End of reusable
   .section-one {
     position: relative;
@@ -246,6 +284,41 @@ button {
     }
     .grid-item:nth-of-type(5) {
       grid-area: e;
+    }
+  }
+  footer {
+    padding-left: 10%;
+    .grid-container {
+      display: grid;
+      grid-template-areas: "a b c d empty e";
+      .grid-item {
+        text-align: left;
+        img {
+          margin-right: 100%;
+        }
+      }
+      .grid-item:nth-of-type(1) {
+        grid-area: a;
+      }
+      .grid-item:nth-of-type(2) {
+        grid-area: b;
+      }
+      .grid-item:nth-of-type(3) {
+        grid-area: c;
+      }
+      .grid-item:nth-of-type(4) {
+        grid-area: d;
+      }
+      .grid-item:nth-of-type(5) {
+        grid-area: e;
+      }
+    }
+    li {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    ul {
+      margin-left: auto;
     }
   }
 }
