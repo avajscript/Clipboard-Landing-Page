@@ -108,9 +108,17 @@ button:active {
   box-shadow: 0 5px 0 #1f9886;
 }
 
+.ios-button:hover {
+  background-color: #2acfb7;
+}
+
 .mac-button {
   background-color: #6173ff;
   box-shadow: 0 5px 0 #384fff;
+}
+
+.mac-button:hover {
+  background-color: #7a8aff;
 }
 
 .section-one {
@@ -164,6 +172,7 @@ button:active {
 }
 
 .section-five {
+  margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
@@ -178,6 +187,10 @@ button:active {
 footer {
   padding: 30px;
   background-color: #eee;
+}
+
+footer a:hover {
+  color: #26baa4;
 }
 
 footer .grid-container {
@@ -329,6 +342,9 @@ footer a {
   footer li {
     display: inline-block;
     margin-left: 10px;
+  }
+  footer li:hover i {
+    color: #26baa4;
   }
   footer ul {
     margin-left: auto;
