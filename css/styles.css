@@ -20,7 +20,8 @@ body {
 
 h1 {
   color: #4c545d;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
 }
 
 p {
@@ -37,6 +38,11 @@ header.header {
 
 header.header p {
   margin-bottom: 3rem;
+}
+
+header.header h1 {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
 }
 
 .logo {
@@ -78,6 +84,26 @@ button:active {
   box-shadow: 0 5px 0 #384fff;
 }
 
+.section-one {
+  padding: 0 2rem;
+}
+
+.section-one img {
+  width: 100%;
+}
+
+.section-one .flex-desktop-container {
+  margin-top: 4rem;
+}
+
+.section-one .article {
+  margin-top: 4rem;
+}
+
+.section-one {
+  margin-top: 10rem;
+}
+
 @media screen and (min-width: 1052px) {
   button {
     display: inline-block;
@@ -101,5 +127,30 @@ button:active {
     display: flex;
     flex: 1;
     justify-content: flex-end;
+  }
+  .flex {
+    display: flex;
+  }
+  .article {
+    text-align: left;
+  }
+  .section-one {
+    position: relative;
+  }
+  .section-one img {
+    max-width: 800px;
+    position: relative;
+    left: -20%;
+  }
+  .section-one .float-left {
+    position: relative;
+  }
+  .float-left {
+    float: left;
+    width: 50%;
+  }
+  .float-right {
+    float: right;
+    width: 50%;
   }
 }

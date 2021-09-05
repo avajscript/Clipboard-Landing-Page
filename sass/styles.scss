@@ -20,7 +20,8 @@ body {
 }
 h1 {
   color: $dark-grey;
-  margin-bottom: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
 }
 p {
   color: $light-grey;
@@ -34,6 +35,10 @@ header.header {
   position: relative;
   p {
     margin-bottom: 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
   }
 }
 
@@ -71,6 +76,21 @@ button {
   background-color: hsl(233, 100%, 69%);
   box-shadow: 0 5px 0 hsl(233, 100%, 61%);
 }
+.section-one {
+  padding: 0 2rem;
+  img {
+    width: 100%;
+  }
+  .flex-desktop-container {
+    margin-top: 4rem;
+  }
+  .article {
+    margin-top: 4rem;
+  }
+}
+.section-one {
+  margin-top: 10rem;
+}
 
 @media screen and (min-width: 1052px) {
   button {
@@ -83,6 +103,7 @@ button {
   #mac-button {
     margin-left: 0.5rem;
   }
+  // Reusable
   .flex-desktop-container {
     display: flex;
   }
@@ -95,5 +116,34 @@ button {
     display: flex;
     flex: 1;
     justify-content: flex-end;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .article {
+    text-align: left;
+  }
+
+  // End of reusable
+  .section-one {
+    position: relative;
+    img {
+      max-width: 800px;
+      position: relative;
+      left: -20%;
+    }
+    .float-left {
+      position: relative;
+    }
+  }
+  .float-left {
+    float: left;
+    width: 50%;
+  }
+  .float-right {
+    float: right;
+    width: 50%;
   }
 }
