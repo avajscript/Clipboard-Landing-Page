@@ -90,11 +90,11 @@ button {
     box-shadow: none !important;
   }
 }
-#ios-button {
+.ios-button {
   background-color: hsl(171, 66%, 44%);
   box-shadow: 0 5px 0 hsl(171, 66%, 36%);
 }
-#mac-button {
+.mac-button {
   background-color: hsl(233, 100%, 69%);
   box-shadow: 0 5px 0 hsl(233, 100%, 61%);
 }
@@ -135,6 +135,12 @@ button {
     margin-bottom: 2rem;
   }
 }
+.section-four {
+  margin-top: 10rem;
+  .grid-item {
+    margin-bottom: 4rem;
+  }
+}
 
 @media screen and (min-width: 1052px) {
   .bg-image {
@@ -150,10 +156,10 @@ button {
     display: inline-block;
     margin: 0;
   }
-  #ios-button {
+  .ios-button {
     margin-right: 0.5rem;
   }
-  #mac-button {
+  .mac-button {
     margin-left: 0.5rem;
   }
   // Reusable
@@ -212,6 +218,28 @@ button {
     }
     .grid-item:nth-of-type(3) {
       grid-area: c;
+    }
+  }
+
+  .section-four {
+    .grid-container {
+      display: grid;
+      grid-template-areas: "a b c d e";
+    }
+    .grid-item:nth-of-type(1) {
+      grid-area: a;
+    }
+    .grid-item:nth-of-type(2) {
+      grid-area: b;
+    }
+    .grid-item:nth-of-type(3) {
+      grid-area: c;
+    }
+    .grid-item:nth-of-type(4) {
+      grid-area: d;
+    }
+    .grid-item:nth-of-type(5) {
+      grid-area: e;
     }
   }
 }

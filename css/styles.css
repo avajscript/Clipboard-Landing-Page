@@ -99,12 +99,12 @@ button:active {
   box-shadow: none !important;
 }
 
-#ios-button {
+.ios-button {
   background-color: #26baa4;
   box-shadow: 0 5px 0 #1f9886;
 }
 
-#mac-button {
+.mac-button {
   background-color: #6173ff;
   box-shadow: 0 5px 0 #384fff;
 }
@@ -151,6 +151,14 @@ button:active {
   margin-bottom: 2rem;
 }
 
+.section-four {
+  margin-top: 10rem;
+}
+
+.section-four .grid-item {
+  margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 1052px) {
   .bg-image {
     background: url("../images/bg-header-desktop.png");
@@ -163,10 +171,10 @@ button:active {
     display: inline-block;
     margin: 0;
   }
-  #ios-button {
+  .ios-button {
     margin-right: 0.5rem;
   }
-  #mac-button {
+  .mac-button {
     margin-left: 0.5rem;
   }
   .flex-desktop-container {
@@ -219,5 +227,24 @@ button:active {
   }
   .section-three .grid-item:nth-of-type(3) {
     grid-area: c;
+  }
+  .section-four .grid-container {
+    display: grid;
+    grid-template-areas: "a b c d e";
+  }
+  .section-four .grid-item:nth-of-type(1) {
+    grid-area: a;
+  }
+  .section-four .grid-item:nth-of-type(2) {
+    grid-area: b;
+  }
+  .section-four .grid-item:nth-of-type(3) {
+    grid-area: c;
+  }
+  .section-four .grid-item:nth-of-type(4) {
+    grid-area: d;
+  }
+  .section-four .grid-item:nth-of-type(5) {
+    grid-area: e;
   }
 }
