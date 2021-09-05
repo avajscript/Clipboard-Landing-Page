@@ -1,10 +1,99 @@
+$dark-grey: hsl(210, 10%, 33%);
+$light-grey: hsl(201, 11%, 66%);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Jamjuree;
+  font-family: "Bai Jamjuree";
 }
 
 button {
   border: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  text-align: center;
+  font-size: 18px;
+}
+h1 {
+  color: $dark-grey;
+  margin-bottom: 1.4rem;
+}
+p {
+  color: $light-grey;
+  line-height: 1.6;
+}
+
+header.header {
+  background: url("../images/bg-header-mobile.png");
+  background-size: 100% 100%;
+  padding: 6rem 2rem 0;
+  position: relative;
+  p {
+    margin-bottom: 3rem;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  width: 125px;
+  margin-bottom: 3rem;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  border-radius: 6rem;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  max-width: 350px;
+  a {
+    color: white;
+    font-size: 18px;
+  }
+  box-shadow: none;
+  &:active {
+    top: 5px;
+    box-shadow: none !important;
+  }
+}
+#ios-button {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 5px 0 hsl(171, 66%, 36%);
+}
+#mac-button {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 5px 0 hsl(233, 100%, 61%);
+}
+
+@media screen and (min-width: 1052px) {
+  button {
+    display: inline-block;
+    margin: 0;
+  }
+  #ios-button {
+    margin-right: 0.5rem;
+  }
+  #mac-button {
+    margin-left: 0.5rem;
+  }
+  .flex-desktop-container {
+    display: flex;
+  }
+  .flex-desktop-right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+  .flex-desktop-left {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
 }
