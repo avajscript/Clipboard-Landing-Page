@@ -159,6 +159,10 @@ button:active {
   margin-bottom: 4rem;
 }
 
+.section-five p {
+  margin-bottom: 3rem;
+}
+
 @media screen and (min-width: 1052px) {
   .bg-image {
     background: url("../images/bg-header-desktop.png");
