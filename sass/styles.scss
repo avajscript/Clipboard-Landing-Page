@@ -7,7 +7,16 @@ $light-grey: hsl(201, 11%, 66%);
   box-sizing: border-box;
   font-family: "Bai Jamjuree";
 }
-
+.bg-image {
+  position: absolute;
+  width: 100%;
+  background: url("../images/bg-header-mobile.png");
+  background-size: 100% 100%;
+  img {
+    width: 100%;
+    visibility: hidden;
+  }
+}
 button {
   border: none;
 }
@@ -27,17 +36,30 @@ p {
   color: $light-grey;
   line-height: 1.6;
 }
+// Reusable
 
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cap-width {
+  max-width: 900px;
+}
+.left {
+  text-align: left;
+}
+// End of reusable
 header.header {
-  background: url("../images/bg-header-mobile.png");
-  background-size: 100% 100%;
   padding: 6rem 2rem 0;
   position: relative;
+  margin: 0 auto;
   p {
     margin-bottom: 3rem;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1.4rem;
   }
 }
@@ -80,6 +102,8 @@ button {
   padding: 0 2rem;
   header {
     margin-bottom: 5rem;
+
+    margin: 0 auto 5rem;
   }
   img {
     width: 100%;
@@ -94,8 +118,34 @@ button {
 .section-one {
   margin-top: 10rem;
 }
+.section-two {
+  margin: 15rem auto 0;
+
+  img {
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
+
+.section-three {
+  .article {
+    margin-top: 4rem;
+  }
+  img {
+    margin-bottom: 2rem;
+  }
+}
 
 @media screen and (min-width: 1052px) {
+  .bg-image {
+    background: url("../images/bg-header-desktop.png");
+    background-size: 100% 100%;
+  }
+  header.header {
+    h1 {
+      font-size: 2.7rem;
+    }
+  }
   button {
     display: inline-block;
     margin: 0;
@@ -125,10 +175,6 @@ button {
     display: flex;
   }
 
-  .article {
-    text-align: left;
-  }
-
   // End of reusable
   .section-one {
     position: relative;
@@ -140,6 +186,9 @@ button {
     .float-left {
       position: relative;
     }
+    .article {
+      text-align: left;
+    }
   }
   .float-left {
     float: left;
@@ -148,5 +197,21 @@ button {
   .float-right {
     float: right;
     width: 50%;
+  }
+
+  .section-three {
+    .grid-container {
+      display: grid;
+      grid-template-areas: "a b c";
+    }
+    .grid-item:nth-of-type(1) {
+      grid-area: a;
+    }
+    .grid-item:nth-of-type(2) {
+      grid-area: b;
+    }
+    .grid-item:nth-of-type(3) {
+      grid-area: c;
+    }
   }
 }

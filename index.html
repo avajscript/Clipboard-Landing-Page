@@ -15,7 +15,16 @@
   </head>
   <body>
     <div class="main">
-      <header class="header">
+      <div class="bg-image">
+        <picture>
+          <source
+            media="(min-width:1052px)"
+            srcset="./images/bg-header-desktop.png"
+          />
+          <img src="./images/bg-header-mobile.png" />
+        </picture>
+      </div>
+      <header class="header cap-width">
         <div class="logo">
           <img src="./images/logo.svg" alt="large green c" />
         </div>
@@ -36,8 +45,8 @@
         <!-- End of buttons -->
       </header>
       <!-- End of header -->
-      <section class="section-one">
-        <header>
+      <section class="section-one clearfix">
+        <header class="cap-width">
           <h1>Keep track of your snippets</h1>
           <p>
             Clipboard instantly stores any item you copy in the cloud, meaning
@@ -74,6 +83,89 @@
 
         <!-- End of article -->
       </section>
+      <!-- End of section 1 -->
+
+      <section class="section-two cap-width">
+        <header>
+          <div class="article">
+            <h1>Access Clipboard Anywhere</h1>
+            <p>
+              Where you're on the go, or at your computer, you can access all
+              your Clipboard snippets in a few simple clicks.
+            </p>
+          </div>
+        </header>
+        <img src="./images/image-devices.png" alt="mobile phone and tablet" />
+      </section>
+      <!-- End of section 2 -->
+
+      <section class="section-three">
+        <header>
+          <h1>Supercharge your workflow</h1>
+          <p>We've got the tools to boost your productivity.</p>
+        </header>
+        <div class="grid-container">
+          <div class="grid-item article">
+            <img src="./images/icon-blacklist.svg" alt="blacklist icon" />
+            <h1>Create blacklists</h1>
+            <p>
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <!-- End of grid item-->
+
+          <div class="grid-item article">
+            <img src="./images/icon-text.svg" alt="blacklist icon" />
+            <h1>Plain text snippets</h1>
+            <p>
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <!-- End of grid item -->
+
+          <div class="grid-item article">
+            <img src="./images/icon-preview.svg" alt="blacklist icon" />
+            <h1>Sneak preview</h1>
+            <p>
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+          <!-- End of grid item-->
+        </div>
+        <!-- End of grid container -->
+      </section>
+      <!-- End of section three-->
+      <div class="section-four">
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="./images/logo-google.png" />
+          </div>
+          <!-- End of grid item -->
+
+          <div class="grid-item">
+            <img src="./images/logo-google.png" />
+          </div>
+          <!-- End of grid item -->
+
+          <div class="grid-item">
+            <img src="./images/logo-google.png" />
+          </div>
+          <!-- End of grid item -->
+
+          <div class="grid-item">
+            <img src="./images/logo-google.png" />
+          </div>
+          <!-- End of grid item -->
+
+          <div class="grid-item">
+            <img src="./images/logo-google.png" />
+          </div>
+          <!-- End of grid item -->
+        </div>
+        <!-- End of grid container-->
+      </div>
+      <!-- End of section four-->
     </div>
   </body>
 </html>

@@ -5,6 +5,18 @@
   font-family: "Bai Jamjuree";
 }
 
+.bg-image {
+  position: absolute;
+  width: 100%;
+  background: url("../images/bg-header-mobile.png");
+  background-size: 100% 100%;
+}
+
+.bg-image img {
+  width: 100%;
+  visibility: hidden;
+}
+
 button {
   border: none;
 }
@@ -29,11 +41,24 @@ p {
   line-height: 1.6;
 }
 
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cap-width {
+  max-width: 900px;
+}
+
+.left {
+  text-align: left;
+}
+
 header.header {
-  background: url("../images/bg-header-mobile.png");
-  background-size: 100% 100%;
   padding: 6rem 2rem 0;
   position: relative;
+  margin: 0 auto;
 }
 
 header.header p {
@@ -41,7 +66,7 @@ header.header p {
 }
 
 header.header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1.4rem;
 }
 
@@ -90,6 +115,7 @@ button:active {
 
 .section-one header {
   margin-bottom: 5rem;
+  margin: 0 auto 5rem;
 }
 
 .section-one img {
@@ -108,7 +134,31 @@ button:active {
   margin-top: 10rem;
 }
 
+.section-two {
+  margin: 15rem auto 0;
+}
+
+.section-two img {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.section-three .article {
+  margin-top: 4rem;
+}
+
+.section-three img {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 1052px) {
+  .bg-image {
+    background: url("../images/bg-header-desktop.png");
+    background-size: 100% 100%;
+  }
+  header.header h1 {
+    font-size: 2.7rem;
+  }
   button {
     display: inline-block;
     margin: 0;
@@ -135,9 +185,6 @@ button:active {
   .flex {
     display: flex;
   }
-  .article {
-    text-align: left;
-  }
   .section-one {
     position: relative;
   }
@@ -149,6 +196,9 @@ button:active {
   .section-one .float-left {
     position: relative;
   }
+  .section-one .article {
+    text-align: left;
+  }
   .float-left {
     float: left;
     width: 50%;
@@ -156,5 +206,18 @@ button:active {
   .float-right {
     float: right;
     width: 50%;
+  }
+  .section-three .grid-container {
+    display: grid;
+    grid-template-areas: "a b c";
+  }
+  .section-three .grid-item:nth-of-type(1) {
+    grid-area: a;
+  }
+  .section-three .grid-item:nth-of-type(2) {
+    grid-area: b;
+  }
+  .section-three .grid-item:nth-of-type(3) {
+    grid-area: c;
   }
 }
